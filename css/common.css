@@ -1,0 +1,30 @@
+html{color:#222;font-size:1em;line-height:1.4;}
+::-moz-selection{background:#b3d4fc;text-shadow:none;}
+::selection{background:#b3d4fc;text-shadow:none;}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0;}
+audio,canvas,iframe,img,svg,video{vertical-align:middle;}
+fieldset{border:0;margin:0;padding:0;}
+textarea{resize:vertical;}
+.hidden,[hidden]{display:none!important;}
+.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;white-space:nowrap;width:1px;}
+html{font-size:10px;-webkit-text-size-adjust:none;text-size-adjust:none;}
+html,body,div,h1,h2,h3,h4,h5,h6,p,dl,dt,dd,ol,ul,li,form,fieldset,legend,address,figure,hr,object,iframe,img,button,input,select,textarea,label,a,span,em,strong,small,sub,sup,table,caption,thead,tbody,tfoot,tr,th,td,article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{box-sizing:border-box;}
+h1,h2,h3,h4,h5,h6,p{margin:0;padding:0;}
+ul,ol,dl{margin:0;padding:0;list-style:none;}
+button{margin:0;padding:0;border:none;outline:none;background:none;cursor:pointer;}
+input,select,textarea{margin:0;padding:0;border:none;outline:none;}
+input[type="radio"],input[type="checkbox"],select{cursor:pointer;}
+a{display:inline-block;}
+body{overflow:hidden;overflow-y:auto;padding-left:calc(100vw - 100%);}
+body.modal-active{overflow:hidden;}
+
+/* style */
+button{padding: 1.5rem 2rem; background-color: #E2E9F1; border-radius: 1rem; margin-left: 1rem; margin-right: 1rem; font-size: 1.8rem; opacity: .8;font-weight: normal; box-shadow: 0 0 0.5rem 0rem rgba(0, 0, 0, .2);}
+button:hover{opacity: 1;}
+
+button.g{background-color: #4DD265; color: #fff; font-weight: 300;}
+button.true{background-color: #06c; color: #fff; font-weight: 300;}
+button.false:hover{background-color: #EA0069; color: #fff; font-weight: 300;}
+
+#wrap{width:100%;max-width:720px;margin:0 auto;z-index:15;height:100%;padding-top:2rem;position:relative;}
+@media (max-width : 720px) {html{font-size:1.3888888888889vw;}}

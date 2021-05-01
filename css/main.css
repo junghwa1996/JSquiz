@@ -1,0 +1,20 @@
+:root{background-color: #eee;}
+
+/* main */
+
+main{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); text-align: center;}
+main h1{font-size: 5rem; font-weight: bold; margin-bottom: 3rem; }
+
+.info-box{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); background-color: #fff; border-radius: 2rem; padding: 2rem 3rem; width: 56rem; opacity: 0; transition: all 1s; z-index: -1;}
+.info-box.active{opacity: 1; transition: all 1s; z-index: 1;}
+
+.info-title{font-size: 3rem; text-align: center; margin: 2rem 0 4rem;}
+
+.info-list{margin-bottom: 4rem;}
+.info-list .info{font-size: 2rem;}
+.info-list .info:not(:last-child){margin-bottom: 1.5rem;}
+.info-list .info span{color: #06c; font-weight: bold;}
+.info-list .info::first-letter{font-weight: bold;}
+.info-list .info:nth-child(4){color: #EA0069; font-weight: bold;}
+
+.info-button{display: flex; margin-bottom: 2rem; justify-content: center;}
