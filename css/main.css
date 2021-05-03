@@ -1,11 +1,11 @@
-:root{background-color: #eee;}
+:root{background-color: rgb(188, 216, 248);}
 
 /* main */
 
 main{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); text-align: center;}
 main h1{font-size: 5rem; font-weight: bold; margin-bottom: 3rem; }
 
-.info-box{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); background-color: #fff; border-radius: 2rem; padding: 2rem 3rem; width: 56rem; opacity: 0; transition: all 1s; z-index: -1;}
+.info-box{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); background-color: #fff; border-radius: 2rem; padding: 2rem 3rem; width: 56rem; opacity: 0; z-index: -1;}
 .info-box.active{opacity: 1; transition: all 1s; z-index: 1;}
 
 .info-title{font-size: 3rem; text-align: center; margin: 2rem 0 4rem;}
@@ -18,3 +18,23 @@ main h1{font-size: 5rem; font-weight: bold; margin-bottom: 3rem; }
 .info-list .info:nth-child(4){color: #EA0069; font-weight: bold;}
 
 .info-button{display: flex; margin-bottom: 2rem; justify-content: center;}
+
+/* quiz */
+.quiz{position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); background-color: #eee; border-radius: 2rem; width: 60rem; display: none;}
+.quiz.active{display: block;}
+.quiz header{display: flex; justify-content: space-between; align-items: center; height: 10rem;box-shadow: 0px 3px 5px 1px rgb(0 0 0 / 10%); padding: 0 3rem; border-radius: 2rem 2rem 0 0;}
+.quiz header h2{font-size: 3rem; font-weight: bold;}
+.quiz header .time_line{width: 100%; background-color: #06c; height: 2px; position: absolute; left: 0; top: 10rem;}
+
+.quiz .time{display: flex; font-size: 2rem; align-items: center;}
+.quiz .time .time_txt{margin-right: 1rem;}
+.quiz .time .time_sec{padding: 1rem 1.5rem; background-color: #06c; color: #fff; font-weight: bold; border-radius: 1rem;}
+
+.quiz_sec{padding: 4rem 3rem;}
+.quiz_sec .quiz_title{font-size: 3rem; margin-bottom: 3rem;}
+.quiz_sec .quiz_list{font-size: 2rem; display: flex; flex-direction: column;}
+.quiz_sec .quiz_list span{background-color: #fff; border-radius: 2rem; padding: 3rem 2rem; cursor: pointer;}
+.quiz_sec .quiz_list span:not(:last-child){margin-bottom: 3rem;}
+
+footer{display: flex; justify-content: space-between; padding: 0 3rem; align-items: center; height: 12rem; border-top: 1px solid #ddd;}
+footer .total_quiz{font-size: 2.8rem;}
