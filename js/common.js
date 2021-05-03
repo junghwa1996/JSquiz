@@ -1,13 +1,11 @@
-var start = $('#start_btn');
-var infoBox = $('.info-box');
+const start = document.getElementById("start_btn");
+const info = document.getElementById("info-box");
+const infoFalse = document.querySelector(".info-button .false");
 
-start.click(function () {
-   infoBox.addClass('active');
-   var falseBtn = $('.false');
-   // var trueBtn = $('.true');
-
-   falseBtn.click(function () {
-      infoBox.removeClass('active');
-   });
-});
-
+// 시작
+start.onclick = () => {
+   info.classList.add("active");
+   infoFalse.onclick = () => {
+      info.classList.remove("active");
+   }
+}
