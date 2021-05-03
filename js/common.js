@@ -1,12 +1,13 @@
-var start = document.getElementById('start_btn');
-var info = document.getElementById('info-box').className;
+var start = $('#start_btn');
+var infoBox = $('.info-box');
 
+start.click(function () {
+   infoBox.addClass('active');
+});
 
-var infoClass = info.add(active);
-console.log(infoClass);
+var falseBtn = $('.false');
+var trueBtn = $('.true');
 
-// function infoOpen() {
-//    info.classList.add('active');
-// }
-
-// start.addEventListener('click',infoOpen);
+falseBtn.click(function () {
+   infoBox.removeClass('active');
+});
